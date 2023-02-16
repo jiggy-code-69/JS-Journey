@@ -1,15 +1,27 @@
-//  js program that continues to ask the user for a number until the entered number is less
-// than or equal to 100. 
+//  js program that continues to ask the user for a number until the entered number is less than or equal to 100. 
 // using do while
 
 
-let num;
+// let num;
 
-do {
-  num = prompt("Please enter a number");
-} while (num > 100);
+// do {
+//   num = prompt("Please enter a number less than 100 to  quit");
+// } while (num > 100);
 
-alert("The number you entered is less than or equal to 100.");
+// alert("The number you entered is less than or equal to 100.");
+
+
+let num = 0;
+
+while (num > 100 || num == 0) {
+  let input = prompt("Please enter a number less than or equal to 100:");
+  if (input !== null) {
+    num = parseInt(input);
+  }
+}
+
+alert("You entered a number less than or equal to 100!");
+
 // ===============================================================================================================================
 // ===============================================================================================================================
 
