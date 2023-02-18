@@ -1,10 +1,10 @@
 let n = Number(prompt("enter a number"));
-if ( (n = 2) || (n = 9)){
-for (let i = 1; i <= 10; ++i) {
-    document.write(n + " * " + i + " = " + n * i + "<br>");
+const limit = 10;
+
+for (let i = 1; i <= limit; ++i) {
+  document.write(n + " * " + i + " = " + n * i + "<br>");
 }
 
-}
 
 
 //this will accept numbers only between 2 to 9
