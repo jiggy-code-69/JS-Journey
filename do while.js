@@ -73,3 +73,13 @@ if (num3 <= 100) {
   }
   alert("The number you entered is less than or equal to 100.");
 }
+
+
+//this program will ask the user to enter text if yes or no is entered then game over
+let input;
+
+do {
+  input = prompt("Enter text (you cannot say 'yes' or 'no'):");
+} while (input.toLowerCase() !== "yes" && input.toLowerCase() !== "no");
+
+alert("Game over!");
