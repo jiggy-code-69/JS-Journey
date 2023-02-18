@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h2>Square pattern in javascript</h2>
+        <input type="number" class="form-control mb-3" id="input" />
+      
+      <button class="btn btn-primary" onclick="star()">click</button>
+      <p id="demo"></p>
+        <script>
+
+function star(){
+  let z = document.getElementById('input').value;
+  
+// let n = 6; // you can take input from prompt
+    let string = "";
+    for (let i = 1; i <= z; i++) {
+      for (let j = 1; j < i; j++) {
+        string += j;
+      }
+      string += "<br>";
+    }
+    document.getElementById("demo").innerHTML= string;
+} 
+ 
+        </script>
+    </body>
+</html>
