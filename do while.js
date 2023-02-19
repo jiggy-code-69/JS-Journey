@@ -22,7 +22,7 @@ while (num > 100 || num == 0) {
 
 alert("You entered a number less than or equal to 100!");
 
-//this below program will prompt user again if the user eneter a string
+//this below program will prompt user again if the user eneter a not a number
 //parseInt and Number works same.
 //The Number() constructor works similarly to parseInt(), but it's a more general-purpose function that can handle decimal numbers as well as numbers in scientific notation. For example, Number("3.14") would return the number 3.14, whereas parseInt("3.14") would return the integer 3.
 
