@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>It's Jiggy Nutri Calculator</title>
+  </head>
+  <style>
+    .displayNutri{
+  border:1px dashed indigo;
+  padding:10px;
+  width:25%;
+  margin:auto;
+}
+
+.displayNutrionalVal{
+  color:red;
+  font-size:30px;
+}
+  </style>
+  <body>
+    <div class="text-center">
+    <h1>Nutri Calculator</h1>
+    </div>
+    <div class="container">
+    
+      <div class="mb-3">
+    <label>Nutritional Value</label>
+    <input type="number" class="form-control nutri-val" id="caloriesAsPer100Grams" placeholder="enter nutritional value as per 100g">
+      </div>
+      
+      
+      <div class="mb-3">
+      <label>Amount to be calculated in grams out of 100</label>
+        <input type="number" class="form-control" id="caloriesTobeCalAsPerInputVal" placeholder="enter amount of grams">
+      </div>
+      
+      <div class="text-center">
+        <h5>Your Nutritional Value from <span id="desiredValue"> </span> is: </br></h5>
+      
+      
+      <div class="displayNutri">
+      <span id="displayNutrionalVal"> </span>
+      </div>
+      
+      <div class="mt-5">
+        <button class=" btn btn-primary" id="calculate-nutri">Calculate</button>
+      
+  
+    </div>
+     
+    </div>
+    <script>
+      document.getElementById('calculate-nutri').addEventListener('click', calculateNutri)
+
+function calculateNutri(){
+    document.getElementById('desiredValue').innerText = '';
+  const caloriesAsPer100Grams =  document.getElementById('caloriesAsPer100Grams').value;
+  const caloriesTobeCalAsPerInputVal = document.getElementById('caloriesTobeCalAsPerInputVal').value;
+  
+  document.getElementById('displayNutrionalVal').innerText = caloriesAsPer100Grams * caloriesTobeCalAsPerInputVal / 100;
+  document.getElementById('desiredValue').innerText = caloriesTobeCalAsPerInputVal;
+}
+
+
+    </script>
+  </body>
+</html>
