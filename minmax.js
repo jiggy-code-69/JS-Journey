@@ -50,6 +50,37 @@ console.log(calculator(12, "/", 0)); // Must show Infinity
 
 
 
+// Circumference and area of a circle
+// Write a program containing two functions to calculate the circumference and area of a circle
+// defined by its radius. Test it using user input
+
+
+function circumCircle(x){
+    const r = x;
+    const π = 3.14;
+    //formula for circumference of circle is (C = 2 * π * radius)
+   let circum = 2 * π * r;
+    console.log(circum);
+}
+circumCircle(6);
+
+function areaOfCircle(x){
+ const r = x;
+ const π = 3.14;
+ //formula for area of circle is (A = π * radius^2)
+ let A = π * (r**2);
+ console.log(A);
+}
+areaOfCircle(9);
+
+
+
+
+
+
+
+
+
 
 
 
