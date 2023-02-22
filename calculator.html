@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Not so great calculator">
+    	<meta name="keywords" content="calculator, bad, numbers">
+
+		<title>Not So Great Calculator</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="cnormalize.css">
+    <style>
+    /* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1, h2{
+  text-align: center;
+}
+img{
+  display: block;
+  height: 300px;
+  margin: 0 auto;
+}
+ul{
+  width: 100px;
+/*   height: 200px; */
+  border: 3px solid black;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+li{
+  text-align: center;
+  width: 94px;
+  height: 49px;
+  border: 1px solid black;
+}
+
+    </style>
+	</head>
+	<body>
+		<h1>Not So Great Calculator</h1>
+		<ul>
+			<li id="one">0</li>
+			<li id="two">-3</li>
+			<li id="three">+9</li>
+			<li id="four">-2</li>
+			<li id="five">+5</li>
+		</ul>
+		<h2>Result: <span id="result"></span></h2>
+
+
+		<script>
+    
+    document.getElementById('one').addEventListener('click', zero);
+document.getElementById('two').addEventListener('click', sub3);
+document.getElementById('three').addEventListener('click', add9);
+document.getElementById('four').addEventListener('click', sub2);
+document.getElementById('five').addEventListener('click', add5);
+
+var total = 0; 
+function zero(){
+  total = 0;
+  document.getElementById('result').innerText = total;
+}
+
+function sub3(){
+  total = total - 3;
+  document.getElementById('result').innerText = total ;
+}
+
+function add9(){
+  total = total + 9;
+  document.getElementById('result').innerText = total ;
+}
+
+function sub2(){
+  total = total - 2;
+  document.getElementById('result').innerText = total ;
+}
+
+function add5(){
+  total = total + 5;
+  document.getElementById('result').innerText = total ;
+}
+    </script>
+	</body>
+</html>
