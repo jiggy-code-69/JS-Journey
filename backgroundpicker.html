@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This app helps youtubers pick the best background color for their videos">
+    	<meta name="keywords" content="youtube, background, lights">
+
+		<title>Background Picker</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="normalize.css">
+		<style>
+      /* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1, h2{
+  text-align: center;
+}
+img{
+  display: block;
+  height: 200px;
+  margin: 0 auto;
+}
+ul{
+  width: 100px;
+/*   height: 200px; */
+  border: 3px solid black;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+li{
+  width: 94px;
+  height: 65px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+#red{
+  background: red;
+}
+#green{
+  background: green;
+}
+#orange{
+  background: orange;
+}
+#indigo{
+  background: indigo;
+}
+    </style>
+	</head>
+	<body>
+		<h1> Background Picker</h1>
+		<img src="https://cdn.glitch.global/543bad7c-c313-4eb8-867a-72970d67fd3b/chair.png?v=1671448197606" alt="generic youtube gaming chair">
+
+		<h2>Remote</h2>
+		<ul>
+			<li id="red"></li>
+			<li id="green"></li>
+			<li id="orange"></li>
+			<li id="indigo"></li>
+		</ul>
+
+		<script type="text/javascript">
+    document.getElementById('red').addEventListener('click', makeRed);
+document.getElementById('green').addEventListener('click', makeGreen);
+document.getElementById('orange').addEventListener('click', makeOrange);
+document.getElementById('indigo').addEventListener('click', makeIndigo);
+
+function makeRed(){
+  document.querySelector('body').style.background = 'red';
+  document.querySelector('body').style.color = 'white';
+}
+
+function makeGreen(){
+  document.querySelector('body').style.background = 'green';
+  document.querySelector('body').style.color = 'white';
+}
+
+function makeOrange(){
+  document.querySelector('body').style.background = 'orange';
+  document.querySelector('body').style.color = 'white';
+}
+
+function makeIndigo(){
+  document.querySelector('body').style.background = 'indigo';
+  document.querySelector('body').style.color = 'white';
+}
+    </script>
+	</body>
+</html>
