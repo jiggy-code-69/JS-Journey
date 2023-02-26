@@ -10,6 +10,22 @@ let addFive = outerFunction(5);
 console.log(addFive(3)); // Output: 8
 
 
+// another example
+
+function counter() {
+  let count = 0;
+
+  return function() {
+    count++;
+    console.log(count);
+  }
+}
+
+let increment = counter();
+
+increment(); // Output: 1
+increment(); // Output: 2
+increment(); // Output: 3
 
 // In this example, we have an outerFunction that takes a single parameter x. Inside outerFunction, we define an innerFunction that takes a single parameter y.
 
