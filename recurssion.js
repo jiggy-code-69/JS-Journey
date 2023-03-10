@@ -60,3 +60,22 @@ return find(1, "1");
 }
 console.log(findSolution(24));
 // → (((1 * 3) + 5) * 3)
+
+
+
+
+function factorial(num) {
+
+  if (num === 0) {
+
+    return 1;
+
+  } else {
+
+    return num * factorial(num - 1);
+
+  }
+
+}
+
+console.log(factorial(5)); // Output: 120
