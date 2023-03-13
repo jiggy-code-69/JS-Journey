@@ -18,3 +18,21 @@ outerFunction(); // Output: "Hello World"
 // When outerFunction is called, it declares the variable outerVariable and then calls innerFunction. When innerFunction is called, it declares the variable innerVariable and then logs the values of both outerVariable and innerVariable to the console.
 
 // Because of lexical scoping, innerFunction has access to both outerVariable and innerVariable. However, outerFunction does not have access to innerVariable, since it is declared within innerFunction and is therefore scoped to that function only.
+
+
+
+
+
+function outerFunction() {
+  const outerValue = 'I am in the outer function';
+  
+  function innerFunction() {
+    const innerValue = 'I am in the inner function';
+    console.log(outerValue);
+    console.log(innerValue);
+  }
+  
+  innerFunction();
+}
+
+outerFunction(); // Output: 'I am in the outer function' 'I am in the inner function'
