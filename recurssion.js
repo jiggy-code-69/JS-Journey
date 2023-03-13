@@ -79,3 +79,19 @@ function factorial(num) {
 }
 
 console.log(factorial(5)); // Output: 120
+
+
+
+
+
+function fibonacci(n) {
+  if (n < 2) {
+    return n;
+  } else {
+    return fibonacci(n - 1) + fibonacci(n - 2);
+  }
+}
+
+// Call the function with an argument of 8
+console.log(fibonacci(8)); // Output: 21
+
