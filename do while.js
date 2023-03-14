@@ -83,3 +83,15 @@ do {
 } while (input.toLowerCase() !== "yes" && input.toLowerCase() !== "no");
 
 alert("Game over!");
+
+
+let i = 1;
+
+do {
+  console.log(i);
+  i++;
+} while (i <= 5);
+
+
+
+
