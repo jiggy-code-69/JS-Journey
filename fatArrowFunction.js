@@ -59,3 +59,31 @@ const plantNeedsWater = (day) => {
     return false;
   }
 };
+   
+   //fat arrow
+   
+   const plantNeedsWater = (day) => {
+  return day === 'Wednesday' ? true : false;
+};
+   
+   
+   
+   //concise bbody fat arrow function since it has one expression 
+   const plantNeedsWater = day => day === 'Wednesday' ? true : false;
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
