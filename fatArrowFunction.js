@@ -40,8 +40,19 @@ console.log(i
 
 
 
-
+//fat arrow
 const plantNeedsWater = (day) => {
+  if (day === 'Wednesday') {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+   
+//funtion expression   
+   
+   const plantNeedsWater = function(day) {
   if (day === 'Wednesday') {
     return true;
   } else {
