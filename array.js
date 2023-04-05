@@ -75,3 +75,22 @@ for (let i = 1; i < values.length; i++) {
 
 console.log("The maximum value in the array is: " + max);
 console.log("The minimum value in the array is: " + min);
+
+
+
+
+
+// Create a function that takes in an array. If the first number, is less than the last number, alert "Hi". If the first number is greater than the last number, alert "Bye". If they are equal, alert "We close in an hour".
+
+
+function store(arr){
+if(arr[0] < arr[arr.length-1]){
+    alert("Hi");
+}else if(arr[0] > arr[arr.length-1]){
+    alert("Bye");
+}else if(arr[0] === arr[arr.length-1]){
+    alert("We close in an hour");
+}
+
+}
+store([1,2,3]);
