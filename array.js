@@ -109,3 +109,22 @@ function multiNumsInArr(arr){
     alert(product)
 }
 multiNumsInArr([10,2,3])
+
+
+
+
+
+//Create a function that takes in an array of numbers. Return a new array containing every even number from the original array (do not use map or filter)
+
+function evenArray(arr){
+    let newArr = []
+   
+        
+arr.forEach(n=> {
+    if(n % 2 === 0){
+        newArr.push(n)
+    }
+})
+return newArr
+}
+console.log( evenArray([1,2,3,4,5,6,7,8]) )
