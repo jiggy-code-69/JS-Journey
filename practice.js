@@ -44,3 +44,26 @@ function flip2(n){
     }
 }
 flip2(9);
+
+
+
+
+
+//Arrays
+
+//Create and array of tv shows. Loop through and print each show to the console
+let arrSeries = ['Dark','Witcher','GOT','Suits','AOS']
+for(let i = 0;i < arrSeries.length; i++){
+    console.log(arrSeries[i]);
+}
+//Create and array of numbers
+//Return a new array of numbers that includes every even number from the previous Arrays
+let arrNum = [1,2,3,4,5,6];
+let arrEvenNums =console.log(arrNum.filter(x => x % 2 === 0))
+
+//Create a function that takes in an array of numbers
+//Alert the sum of the second lowest and the second highest number
+let nums = [12,34,46,34,23,69,23]
+let sortedArr = nums.sort((a,b) => a - b)
+console.log(sortedArr);
+alert(sortedArr[1] + sortedArr[sortedArr.length - 2])
