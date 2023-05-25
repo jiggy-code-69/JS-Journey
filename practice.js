@@ -67,3 +67,38 @@ let nums = [12,34,46,34,23,69,23]
 let sortedArr = nums.sort((a,b) => a - b)
 console.log(sortedArr);
 alert(sortedArr[1] + sortedArr[sortedArr.length - 2])
+
+
+
+
+
+
+// *Variables*
+// Declare a variable and assign it to your fav drink as a string. Make sure there is no whitespace on either side of the string, and print the value to the console
+var favDrink = "Whisky";
+console.log(favDrink.trim());
+//Declare a variable, assign it a string of multiple words, and check to see if one of the words is "apple".
+var multipleWords = "An apple a day keeps the doctor away";
+console.log(multipleWords.includes("apple"));
+// *Functions*
+// Create a function that returns rock, paper, or scissors as randomly as possible
+let rockPaperSic = Math.floor(Math.random() * 3);
+let rps = rockPaperSic === 0 ? "rock" : rockPaperSic === 1 ? "paper" : "sissor";
+console.log(rps);
+
+// *Conditionals*
+//Create a function that takes in a choice (rock, paper, or scissors) and determines if they won a game of rock paper scissors against a bot using the above function
+function playerBot(myChoice){
+    let botChoice = rps
+    if((myChoice === 'rock' && botChoice === 'sissor') || (myChoice === 'paper' && botChoice === 'rock') || (myChoice === 'sissor' && botChoice === 'paper')){
+        console.log("I win")
+    }else if((myChoice === botChoice )){
+        console.log("It's a Tie")
+    }else{
+        console.log("You Lose")
+    }
+
+}
+playerBot("paper")
+//*Loops*
+//Create a function that takes an array of choices. Play the game x times where x is the number of choices in the array. Print the results of each game to the console.
