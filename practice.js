@@ -82,23 +82,26 @@ var multipleWords = "An apple a day keeps the doctor away";
 console.log(multipleWords.includes("apple"));
 // *Functions*
 // Create a function that returns rock, paper, or scissors as randomly as possible
-let rockPaperSic = Math.floor(Math.random() * 3);
-let rps = rockPaperSic === 0 ? "rock" : rockPaperSic === 1 ? "paper" : "sissor";
-console.log(rps);
+function rockPaperScissor(){
+    let rsp= Math.floor((Math.random() * 3))
+ return rsp === 0 ? 'rock' : rsp === 1 ? 'paper' : 'scissor';
 
-// *Conditionals*
+} 
+// rockPaperScissor()
 //Create a function that takes in a choice (rock, paper, or scissors) and determines if they won a game of rock paper scissors against a bot using the above function
-function playerBot(myChoice){
-    let botChoice = rps
-    if((myChoice === 'rock' && botChoice === 'sissor') || (myChoice === 'paper' && botChoice === 'rock') || (myChoice === 'sissor' && botChoice === 'paper')){
-        console.log("I win")
-    }else if((myChoice === botChoice )){
+function botPlayer(myChoice){
+    let botChoice = rockPaperScissor();
+    if((myChoice === 'rock' && botChoice === 'scissor') || (myChoice === 'paper' && botChoice === 'rock')|| (myChoice === 'scissor' && botChoice === 'paper')){
+        console.log("I Win, suck it bot")
+    }else if(myChoice === botChoice){
         console.log("It's a Tie")
     }else{
-        console.log("You Lose")
+        console.log("Bot wins")
     }
-
 }
-playerBot("paper")
-//*Loops*
+// botPlayer('rock')
 //Create a function that takes an array of choices. Play the game x times where x is the number of choices in the array. Print the results of each game to the console.
+function playX(arr){
+    arr.forEach(choice=> botPlayer(choice))
+}
+playX(['rock','paper','scissor'])
