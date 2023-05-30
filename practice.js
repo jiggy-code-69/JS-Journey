@@ -105,3 +105,30 @@ function playX(arr){
     arr.forEach(choice=> botPlayer(choice))
 }
 playX(['rock','paper','scissor'])
+
+
+// Create a function that returns rock, paper, or scissors as randomly as possible
+function rockPaperScissor(){
+let randomNumber = Math.floor(Math.random() * 3)
+return rsp = randomNumber === 0 ? 'rock' : randomNumber === 1 ? 'paper' : 'scissor'
+} 
+// rockPaperScissor()
+//Create a function that takes in a choice (rock, paper, or scissors) and determines if they won a game of rock paper scissors against a bot using the above function
+function botPlayer(myChoice){
+let botChoice = rockPaperScissor();
+// console.log(`This is my choice ${myChoice}`)
+// console.log(`Bot chose ${botChoice}`)
+if((myChoice === 'rock' && botChoice === 'scissor') || (myChoice === 'paper' && botChoice === 'rock') || myChoice === 'scissor' && botChoice === 'paper'){
+console.log("I win")
+}else if(myChoice === botChoice){
+console.log("Tie")
+}else{
+    console.log("Bot Wins")
+}
+}
+// botPlayer(`rock`)
+//Create a function that takes an array of choices. Play the game x times where x is the number of choices in the array. Print the results of each game to the console.
+function playX(arr){
+    arr.forEach(choices => botPlayer(choices));
+}
+playX(['rock','paper','scissor']);
