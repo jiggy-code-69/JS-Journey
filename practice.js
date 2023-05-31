@@ -153,3 +153,41 @@ let sum = arrOfNum.reduce( (accu, currVal)=> {return accu+currVal;},0)
 
 //Create a function that takes in a string
 //Alert if the string is a palindrome or not
+
+
+
+//Arrays
+
+//Create and array of numbers. Sum all of the numbers. Alert the sum.
+arrOfNum = [1,2,3,4,5,69]
+let sum = arrOfNum.reduce( (accu, currVal)=> {return accu+currVal;},0)
+
+
+
+// alert(sum)
+//Create a function that takes in an array of numbers
+function arrOfNums(...numbers) {
+    const arr = [...numbers];
+    return arr;
+  }
+//   const result = arrOfNum(1, 2, 3, 4, 5);
+//   console.log(result); // Output: [1, 2, 3, 4, 5]
+    
+//Return a new array of numbers that is every original number squared
+const num = arrOfNums(1,2,3,4,5)
+let newArr = num.map(arr => arr ** 2)
+console.log(newArr)
+
+//Create a function that takes string
+//Print the reverse of that string to the console
+function takeString(str){
+return str.split("").reverse().join("");
+}
+// takeString("iamastring");
+const str1 = "racecar"
+const newStr = takeString(str1)
+console.log(newStr);
+//Create a function that takes in a string
+//Alert if the string is a palindrome or not
+let palindrome = str1 === newStr ? "its a palindrome" : "not a palindrome"
+console.log(palindrome)
