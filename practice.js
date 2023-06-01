@@ -191,3 +191,29 @@ console.log(newStr);
 //Alert if the string is a palindrome or not
 let palindrome = str1 === newStr ? "its a palindrome" : "not a palindrome"
 console.log(palindrome)
+
+
+//Create a street fighter constructor that makes fighting game characters with 4 properties and 3 methods
+function streetFighterCharacter(Jignesh,Massive,Powerfull,fast){
+this.name = Jignesh
+this.build = Massive
+this.strength = Powerfull
+this.speed = fast
+this.finisher = function(){
+    console.log(`You can't handle my ${this.speed}`)
+}
+this.attack=function(){
+    console.log("Used kick")
+}
+
+this.jump = function(){
+    console.log("Jumped and kicked")
+}
+
+this.slide= function(){
+    console.log("used slide")
+}
+}
+
+let Ji69Y = new streetFighterCharacter("Ji69Y","Aesthetic","Super_Powerfull","speed_of_light")
+ 
